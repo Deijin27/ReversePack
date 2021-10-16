@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="ReversePack.Views.InitializationInfoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ReversePack.Views"
+             xmlns:rp="clr-namespace:ReversePack"
+             xmlns:controls="clr-namespace:ReversePack.Controls"
+             d:DataContext="{d:DesignInstance rp:InitializationInfo, IsDesignTimeCreatable=True}"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="500">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Margin" Value="0,0,4,0"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock>Start Offset 0x</TextBlock>
+        <controls:NumberBox Grid.Column="1" Base="Hex" Value="{Binding StartOffset, Mode=TwoWay}"/>
+
+        <TextBlock Grid.Row="1">Bits Per Row 0x</TextBlock>
+        <controls:NumberBox Grid.Row="1" Grid.Column="1" Base="Hex" Value="{Binding BitsPerRow, Mode=TwoWay}"/>
+
+        <TextBlock Grid.Row="2">Total Length 0x</TextBlock>
+        <controls:NumberBox Grid.Row="2" Grid.Column="1" Base="Hex" Value="{Binding TotalLength, Mode=TwoWay}"/>
+
+        <TextBlock Grid.Row="3">Item Length 0x</TextBlock>
+        <controls:NumberBox Grid.Row="3" Grid.Column="1" Base="Hex" Value="{Binding ItemLength, Mode=TwoWay}"/>
+
+        <TextBlock Grid.Row="4">Data Source File</TextBlock>
+        <TextBox HorizontalAlignment="Stretch" Margin="0" Grid.Row="4" Grid.Column="1" Height="20" Text="{Binding File, Mode=TwoWay}"/>
+
+    </Grid>
+</UserControl>
