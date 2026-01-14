@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31229.75
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReversePack", "ReversePack\ReversePack.csproj", "{03E277B1-EBBD-4260-9F99-D3FC9BD7BBE6}"
 EndProject
@@ -11,7 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SamplePlugins", "SamplePlug
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HueHeatFilter", "SamplePlugins\HueHeatFilter\HueHeatFilter.csproj", "{B4673066-DAE7-43A3-A472-EF5AF38AC1C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixedMapFunction", "SamplePlugins\FixedMapFunction\FixedMapFunction.csproj", "{95777F71-DEE3-44F5-A95E-883BD8D9730B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FixedMapFunction", "SamplePlugins\FixedMapFunction\FixedMapFunction.csproj", "{95777F71-DEE3-44F5-A95E-883BD8D9730B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrayscaleInvertedHeatFilter", "GrayscaleInverted\GrayscaleInvertedHeatFilter.csproj", "{7D349A51-CC88-413C-95DD-80C4B4E8D331}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{95777F71-DEE3-44F5-A95E-883BD8D9730B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95777F71-DEE3-44F5-A95E-883BD8D9730B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95777F71-DEE3-44F5-A95E-883BD8D9730B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D349A51-CC88-413C-95DD-80C4B4E8D331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D349A51-CC88-413C-95DD-80C4B4E8D331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D349A51-CC88-413C-95DD-80C4B4E8D331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D349A51-CC88-413C-95DD-80C4B4E8D331}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +48,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B4673066-DAE7-43A3-A472-EF5AF38AC1C5} = {6983F59A-62C6-42F5-AD74-8A86DBC333C3}
 		{95777F71-DEE3-44F5-A95E-883BD8D9730B} = {6983F59A-62C6-42F5-AD74-8A86DBC333C3}
+		{7D349A51-CC88-413C-95DD-80C4B4E8D331} = {6983F59A-62C6-42F5-AD74-8A86DBC333C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {50EB83D6-4620-46BB-BB90-932A2B5704B8}
