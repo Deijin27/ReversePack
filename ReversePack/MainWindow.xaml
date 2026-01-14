@@ -9,7 +9,7 @@
         d:DataContext="{d:DesignInstance vm:MainWindowViewModel, IsDesignTimeCreatable=False}"
         xmlns:controls="clr-namespace:ReversePack.Controls"
         mc:Ignorable="d"
-        Title="ReversePack v1.0.0"  Background="#a0a0a0">
+        Title="ReversePack v1.1.0"  Background="#a0a0a0">
     <Window.Resources>
         
         <DataTemplate x:Key="BitTemplate" DataType="{x:Type vm:BitViewModel}">
